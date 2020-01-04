@@ -1,9 +1,9 @@
-# ga-project-1
-Trivia Game
+# Trivia Game
 
 Testing your knowledge should always be a fun game, because it makes the user WANT to take part in the quiz instead of the dreaded feeling of them HAVE to. I know we don't get quizzed on the information we've learned from SEI course but it's nice to know if we're able to speak the engineering lingo in the real world. 
 
 User Stories:
+
 (1) Who are the users?
 Coders & Engineer beginners.
 
