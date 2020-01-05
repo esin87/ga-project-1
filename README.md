@@ -41,6 +41,8 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 
 ## Planning checklist:
 
+I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak.
+
 **Bronze version**
 - [x] 4 categories
 - [ ] 4 answers each category
@@ -66,8 +68,10 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 - Flexbox
 
 ## Credits
+
 Credits to amazing sources that I'm thankful for! Sending them many many thanks!
 
 **Markup help:**
+
 Styling & setup - https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 Table of contents - https://www.setcorrect.com/portfolio/work11/
