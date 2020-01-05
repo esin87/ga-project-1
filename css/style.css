@@ -1,0 +1,7 @@
+.gameboard_grid {
+    display: flex;
+}
+
+.gameboard_column1, .gameboard_column2, .gameboard_column3, .gameboard_column4 {
+    width: 25%;
+}
