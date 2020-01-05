@@ -31,10 +31,10 @@ Testing your knowledge should always be a fun game, because it makes the user WA
 I used a free program Wireframe.cc to create my wireframes. This is to get an idea of how I want my layout to be for the quiz board & multiple choice modal.
 
 Gameboard page: https://wireframe.cc/iTfj9f
-!(/images/wireframes/gameboard-mock.png)
+![](https://github.com/daisyy125/ga-project-1/blob/master/images/wireframes/gameboard-mock.png)
 
 Modal with multiple choices: https://wireframe.cc/L6JPw5
-(insert image)
+![](https://github.com/daisyy125/ga-project-1/blob/master/images/wireframes/multiplechoice-mock.png
 
 
 ## Planning checklist:
