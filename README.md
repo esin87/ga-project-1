@@ -1,6 +1,6 @@
 # Trivia Game
 
-Testing your knowledge should always be a fun game, because it makes the user WANT to take part in the quiz instead of the dreaded feeling of them HAVE to. I know we don't get quizzed on the information we've learned from SEI course but it's nice to know if we're able to speak the engineering lingo in the real world. 
+Testing your knowledge should always be a fun game, because it makes the user WANT to take part in the quiz instead of the dreaded feeling of them HAVING to. I know we don't get quizzed on the information we've learned from SEI course but it's nice to know if we're able to speak the engineering lingo in the real world. 
 
 ## Table of Contents:
 - [User Stories](https://github.com/daisyy125/ga-project-1#user-stories)
@@ -41,7 +41,7 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 
 ## Planning checklist:
 
-I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak.
+I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak :purple_heart:
 
 **Bronze version**
 - [x] 4 categories
@@ -74,4 +74,7 @@ Credits to amazing sources that I'm thankful for! Sending them many many thanks!
 **Markup help:**
 
 Styling & setup - https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+
 Table of contents - https://www.setcorrect.com/portfolio/work11/
+
+Programming terminologies for quiz - https://hackr.io/blog/programming-terms-definitions-for-beginners
