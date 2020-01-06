@@ -44,7 +44,7 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak :purple_heart:
 
 **Bronze version**
-- [x] 4 categories
+- [x] 3 categories
 - [ ] 4 answers each category
 - [ ] Multiple choice questions
 - [ ] Score keeping
