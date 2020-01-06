@@ -67,6 +67,10 @@ I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-gam
 - Javascript
 - Flexbox
 
+## Unsolved Problems/Hurdles
+
+It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice.
+
 ## Credits
 
 Credits to amazing sources that I'm thankful for! Sending them many many thanks!
@@ -78,3 +82,5 @@ Styling & setup - https://help.github.com/en/github/writing-on-github/basic-writ
 Table of contents - https://www.setcorrect.com/portfolio/work11/
 
 Programming terminologies for quiz - https://hackr.io/blog/programming-terms-definitions-for-beginners
+
+Quiz - https://www.sitepoint.com/how-why-use-html5-custom-data-attributes/
