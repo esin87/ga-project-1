@@ -45,9 +45,9 @@ I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-gam
 
 **Bronze version**
 - [x] 3 categories
-- [ ] 4 answers each category
-- [ ] Multiple choice questions
-- [ ] Score keeping
+- [x] 4 answers each category
+- [x] Multiple choice questions
+- [x] Score keeping
 
 **Silver version**
 - [ ] Animation
@@ -69,7 +69,9 @@ I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-gam
 
 ## Unsolved Problems/Hurdles
 
-It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice.
+It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice. My GA Instructor, Jen, also suggested to have a X close button on the quiz modal so its a better UX.
+
+The hurdles for this project was getting the function to only allow users to select only one multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructor worked through this with me and I was able to update the code to have it working as I planned.
 
 ## Credits
 

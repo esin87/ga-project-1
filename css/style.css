@@ -9,7 +9,7 @@ body {
 
 
 /* /////////////////////////
-//SECTION - GAMEBOARD 
+//SECTION - GAMEBOARD FLEX
 //////////////////////////*/
 
 .gameboard_grid {
@@ -60,6 +60,7 @@ body {
 
 .answer:hover {
     background: lightblue;
+    cursor: pointer;
 }
 
 .correct-response, .incorrect-response {
@@ -67,6 +68,33 @@ body {
     font-size: 25px;
 }
 
+.correct-response {
+    text-decoration: underline;
+}
+
 .incorrect-response {
     color: maroon;
+}
+
+button {
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 600px;
+}
+
+/* /////////////////////////
+//SCOREBOARD
+//////////////////////////*/
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+}
+
+.players_score {
+    border: 3px solid darkgrey;
+    font-size: 25px;
+    margin: 100px;
+    text-align: center;
+    width: 25%;
 }
