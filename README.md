@@ -9,7 +9,7 @@ Testing your knowledge should always be a fun game, because it makes the user WA
 - [Technologies](https://github.com/daisyy125/ga-project-1#technologies)
 - Installation - how to install your program
 - Usage - instructions on how to use project after installation. include screenshots of project in action
-- Unsolved problems/major hurdles
+- [UX Modifications/Hurdles/Unsolved problems](https://github.com/daisyy125/ga-project-1#modificationshurdlesunsolved-problems)
 - [Credits](https://github.com/daisyy125/ga-project-1#credits)
 
 
@@ -43,6 +43,8 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 
 I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak :purple_heart:
 
+I started off my MVP version of the game by creating logic individually (each question modal). That way I can QA and ensure it works before refactoring the code using event propagation.
+
 **Bronze version**
 - [x] 3 categories
 - [x] 4 answers each category
@@ -67,11 +69,22 @@ I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-gam
 - Javascript
 - Flexbox
 
-## Unsolved Problems/Hurdles
+## Modifications/Hurdles/Unsolved Problems
 
-It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice. My GA Instructor, Jen, also suggested to have a X close button on the quiz modal so its a better UX.
+**UX modifications:**
+- It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice. 
 
-The hurdles for this project was getting the function to only allow users to select only one multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructor worked through this with me and I was able to update the code to have it working as I planned.
+- My GA Instructor, Jen, also suggested to have a X close button on the quiz modal instead of setting a timeout on the modal when the question is answered. That way users are able to reflect on question & answer they selected.
+
+**Hurdles**
+I was prepared for the project to be hard but I didn't realize how complicated it can get. Every time I got one function to work, a new issue would arise. Luckily I had awesome GA Instructors to guide me along and provided great feedback (also a different angle) on how to tackle the hurdles.
+
+- I also wanted to display a response when the user selects an answer, notifying them if the answer was correct or incorrect. I couldn't get the correct corresponding div to display and eventually found a workaround (suggested by my GA IA) where I would create a new p node, append directly after the multiple choice answer user selected.
+
+- It was a bit tricky to get the multiple choice function to only allow users to select only ONE multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructor worked through this with me and I was able to update the code to have it working as I planned.
+
+**Unsolved problems:**
+- There is still lingering issues with users able to select another answer once they close out the question and goes back into the same question.
 
 ## Credits
 

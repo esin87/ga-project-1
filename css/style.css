@@ -63,19 +63,6 @@ body {
     cursor: pointer;
 }
 
-.correct-response, .incorrect-response {
-    display: none;
-    font-size: 25px;
-}
-
-.correct-response {
-    text-decoration: underline;
-}
-
-.incorrect-response {
-    color: maroon;
-}
-
 button {
     border-radius: 15px;
     cursor: pointer;

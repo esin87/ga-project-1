@@ -4,26 +4,8 @@
 //When users click on prize amount question
     //display question/answer modal
 
-// let question = document.querySelector('.prize-amount');
-
-// question.addEventListener('click', questionModal);
-
-// function questionModal(evt) {
-//     document.querySelector('.modal-card').style.display = 'flex';
-// }
-
 //for each modal open
     //x button will close modal
-
-//REFACTORED to event propagation//
-// let question = document.querySelector('.gameboard_grid');
-
-// question.addEventListener('click', questionModal);
-
-// function questionModal(evt) {
-//     console.log(evt);
-//     evt.target.nextElementSibling.style.display = 'flex';
-// }
 
 let questionChoice = false;
 let question = document.querySelectorAll('.prize-amount');
@@ -38,7 +20,6 @@ question.forEach((modal) => {
 
 closeModal.forEach((closeButton) => {
     closeButton.addEventListener('click', (evt) => {
-        console.log(evt)
         evt.target.offsetParent.style.display = 'none';
     })
 });
@@ -61,17 +42,18 @@ multipleChoice.forEach((highlightChoice) => {
         if (!questionChoice) {
             questionChoice = true;
             let userAnswer = evt.target.getAttribute('data-answer');
-            let correctAnswer = document.querySelector('.correct-response');
-            let incorrectAnswer = document.querySelector('.incorrect-response');
             let prizeAmount = evt.target.getAttribute('data-value');
             if (userAnswer === 'true') {
-                incorrectAnswer.style.display = 'none';
-                correctAnswer.style.display = 'block';
+                let response = document.createElement('p');
+                response.innerText = 'This is correct!';
+                evt.target.appendChild(response);
                 score += parseInt(prizeAmount);
                 scoreBoard.innerText = `Score: $  ${score}`;
             } else {
-                correctAnswer.style.display = 'none';
-                incorrectAnswer.style.display = 'block';
+                let response = document.createElement('p');
+                response.innerText = 'This is incorrect. Try next question!';
+                response.style.color = 'maroon';
+                evt.target.appendChild(response);
                 score -= parseInt(prizeAmount);
                 scoreBoard.innerText = `Score: $  ${score}`;
             }
