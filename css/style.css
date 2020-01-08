@@ -34,10 +34,6 @@ body {
 //MODAL - QUESTION & ANSWER
 //////////////////////////*/
 
-.gameboard_child {
-    position: relative:
-}
-
 .modal-card {
     background-color: rgba(0,0,0,0.4);
     display: none;
