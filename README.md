@@ -76,10 +76,11 @@ I started off my MVP version of the game by creating logic individually (each qu
 
 - My GA Instructor, Jen, also suggested to have a X close button on the quiz modal instead of setting a timeout on the modal when the question is answered. That way users are able to reflect on question & answer they selected.
 
-**Hurdles**
+**Hurdles:**
+
 I was prepared for the project to be hard but I didn't realize how complicated it can get. Every time I got one function to work, a new issue would arise. Luckily I had awesome GA Instructors to guide me along and provided great feedback (also a different angle) on how to tackle the hurdles.
 
-- I also wanted to display a response when the user selects an answer, notifying them if the answer was correct or incorrect. I couldn't get the correct corresponding div to display and eventually found a workaround (suggested by my GA IA) where I would create a new p node, append directly after the multiple choice answer user selected.
+- I wanted to display a response when the user selects an answer, notifying them if the answer was correct or incorrect. I couldn't get the correct corresponding div to display and eventually found a workaround (suggested by my GA IA) where I would create a new p node, append directly after the multiple choice answer user selected.
 
 - It was a bit tricky to get the multiple choice function to only allow users to select only ONE multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructor worked through this with me and I was able to update the code to have it working as I planned.
 
@@ -97,5 +98,7 @@ Styling & setup - https://help.github.com/en/github/writing-on-github/basic-writ
 Table of contents - https://www.setcorrect.com/portfolio/work11/
 
 Programming terminologies for quiz - https://hackr.io/blog/programming-terms-definitions-for-beginners
+
+**Game help:**
 
 Quiz - https://www.sitepoint.com/how-why-use-html5-custom-data-attributes/
