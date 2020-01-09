@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="outer-wrapper">
     <header>
         <h1>Trivia Quiz</h1>
-        <h2>Are you talking the talk?</h2>
+        <h2>For Beginner Coders</h2>
+        <nav class="nav-parent">
+            <div class="nav-item nav-about">
+                <h3 class="nav-option">About the game</h3>
+                <div class="modal-nav">
+                    <p class="modal-nav-content">Testing your knowledge should always be a fun game. Let's see what we've learned so far from SEI course and if we're able to speak the engineering lingo in the real world.</p>
+                </div>
+            </div>
+            <div class="nav-item nav-rules">
+                <h3 class="nav-option">How to play</h3>
+                <ul class="modal-nav">
+                    <li>Select the best multiple choice that matches the question card.</li>
+                    <li>If answer is correct, your score will increased by the question amount.</li>
+                    <li>If answer is incorrect, your score will be decreased by the question amount.</li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <h3>About the game</h3>
-        <p class="nav about">Testing your knowledge should always be a fun game. Let's see what we've learned so far from SEI course and if we're able to speak the engineering lingo in the real world.</p>
-        <h3>How to play</h3>
-        <ul class="nav rules">
-            <li>Similar to Jeopardy, you select the category and a prize amount box to reveal your question in an answer format.</li>
-            <li>You then select the best multiple choice that matches the answer.</li>
-            <li>If you selected the correct answer, your score will increased by the question amount. </li>
-            <li>If you selected the incorrect answer, your score will be decreased by the question amount.</li>
-        </ul>
-    </nav>
     <main>
         <section class="gameboard gameboard_grid">
             <div class="gameboard gameboard_column1">
@@ -193,6 +199,7 @@
             <div class="players_score">Score</div>
         </section>
     </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -52,10 +52,9 @@ I started off my MVP version of the game by creating logic individually (each qu
 - [x] Score keeping
 
 **Silver version**
-- [ ] Animation
-- [ ] Welcome modal
+- [x] Expand nav with About & Instructions
 - [ ] Player can enter their name for scoreboard to reflect
-- [ ] Page styling
+- [x] Page styling
 - [ ] Timer for multiple choice
 
 **Gold version**
@@ -102,3 +101,9 @@ Programming terminologies for quiz - https://hackr.io/blog/programming-terms-def
 **Game help:**
 
 Quiz - https://www.sitepoint.com/how-why-use-html5-custom-data-attributes/
+
+Stackoverflow - https://stackoverflow.com/questions/13093126/insert-unicode-character-into-javascript
+
+Unicode Characters - https://www.fileformat.info/info/unicode/char/2714/index.htm
+
+

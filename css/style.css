@@ -1,12 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700|Gelasio:400,700');
+
 /* /////////////////////////
 //BODY
 //////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: white;
-    color: black;
+    background:#003399;
+    font-family: "Gelasio", sans-serif;
+    margin: 100px auto;
+    max-width: 1240px;
+}
+
+.outer-wrapper {
+    background: #FFD662;
+    border: 25px solid white;
+    border-radius: 50px;
+    padding-top: 40px;
+}
+
+/* /////////////////////////
+//HEADER
+//////////////////////////*/
+
+ header {
+    color: royalblue;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 35px auto;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-style: italic;
 }
 
 
+/* /////////////////////////
+//NAV
+//////////////////////////*/
+
+.nav-parent {
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nav-item {
+    width: 50%;
+    padding: 25px 100px;
+}
+
+.nav-item:hover {
+    background: white;
+    border-radius: 10px;
+    color: royalblue;
+}
+
+.modal-nav {
+    display: none;
+    font-size: 18px;
+    text-align: left;
+}
 
 /* /////////////////////////
 //SECTION - GAMEBOARD FLEX
@@ -15,19 +78,33 @@ body {
 .gameboard_grid {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+}
+
+.category-name {
+    font-weight: bold;
+    color: white;
 }
 
 .gameboard_column1, .gameboard_column2, .gameboard_column3 {
     background: royalblue;
-    border-top: 1px solid darkgrey;
-    border-bottom: 1px solid darkgrey;
-    color: white;
-    width: 15%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: gold;
+    font-size: 20px;
+    width: 25%;
 }
 
 .gameboard_child {
-    border: 1px solid darkgrey;
+    border: 1px solid white;
     text-align: center;
+    padding: 35px;
+}
+
+.prize-amount:hover {
+    background: white;
+    color: royalblue;
+    cursor: pointer;
 }
 
 /* /////////////////////////
@@ -35,10 +112,10 @@ body {
 //////////////////////////*/
 
 .modal-card {
+    align-items: center;
     background-color: rgba(0,0,0,0.4);
     display: none;
     justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -49,20 +126,27 @@ body {
 .modal-content {
     background-color: royalblue;
     border: 2px solid white;
+    border-radius: 10px;
     color: white;
     font-size: 20px;
+    line-height: 50px;
     padding: 50px;
+    max-width: 750px;
 }
 
 .answer:hover {
-    background: lightblue;
+    background: white;
+    border-radius: 10px;
+    color: royalblue;
     cursor: pointer;
 }
 
 button {
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 600px;
+    height: 25px;
+    margin-left: 500px;
+    width: 25px;
 }
 
 /* /////////////////////////
@@ -75,7 +159,9 @@ button {
 }
 
 .players_score {
-    border: 3px solid darkgrey;
+    border: 3px solid royalblue;
+    border-radius: 25px;
+    color: royalblue;
     font-size: 25px;
     margin: 100px;
     text-align: center;

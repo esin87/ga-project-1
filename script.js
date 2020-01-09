@@ -1,3 +1,23 @@
+//NAV//
+//When users click on nav item
+    //modal displays with the description
+
+let navInfo = document.querySelectorAll('.nav-option');
+
+navInfo.forEach((readMore) => {
+    readMore.addEventListener('click', (evt) => {
+        console.log(evt);
+        console.log(evt.target.nextElementSibling.style.display);
+        if (evt.target.nextElementSibling.style.display === 'block') {
+            evt.target.nextElementSibling.style.display = 'none'
+        } else {
+            evt.target.nextElementSibling.style.display = 'block';
+        }
+    })
+})
+
+
+
 //QUESTION/ANSWER MODAL to appear upon click event//
 
 //PSEUDO CODE//
@@ -13,7 +33,7 @@ let closeModal = document.querySelectorAll('.close');
 
 question.forEach((modal) => {
     modal.addEventListener('click', (evt) => {
-        evt.target.nextElementSibling.style.display = 'flex'; 
+        evt.target.nextElementSibling.style.display = 'flex';
         questionChoice = false;
     });
 })
@@ -45,14 +65,17 @@ multipleChoice.forEach((highlightChoice) => {
             let prizeAmount = evt.target.getAttribute('data-value');
             if (userAnswer === 'true') {
                 let response = document.createElement('p');
-                response.innerText = 'This is correct!';
+                response.innerText = '\u2714 You are correct!';
+                response.style.color = 'gold';
+                response.style.fontStyle = 'italic';
                 evt.target.appendChild(response);
                 score += parseInt(prizeAmount);
                 scoreBoard.innerText = `Score: $  ${score}`;
             } else {
                 let response = document.createElement('p');
-                response.innerText = 'This is incorrect. Try next question!';
+                response.innerText = '\u2717  Incorrect answer. Try next question!';
                 response.style.color = 'maroon';
+                response.style.fontStyle = 'italic';
                 evt.target.appendChild(response);
                 score -= parseInt(prizeAmount);
                 scoreBoard.innerText = `Score: $  ${score}`;
