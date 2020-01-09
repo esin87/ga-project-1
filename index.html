@@ -6,200 +6,205 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7b3bb34a78.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="nav-mobile">
+        <i class="fas fa-bars"></i>
+        <div class="mobile-nav-item"></div>
+    </div>
     <div class="outer-wrapper">
-    <header>
-        <h1>Trivia Quiz</h1>
-        <h2>For Beginner Coders</h2>
-        <nav class="nav-parent">
-            <div class="nav-item nav-about">
-                <h3 class="nav-option">About the game</h3>
-                <div class="modal-nav">
-                    <p class="modal-nav-content">Testing your knowledge should always be a fun game. Let's see what we've learned so far from SEI course and if we're able to speak the engineering lingo in the real world.</p>
+        <header>
+            <h1>Trivia Quiz</h1>
+            <h2>For Beginner Coders</h2>
+            <nav class="nav-parent">
+                <div class="nav-item nav-about">
+                    <h3 class="nav-option">About the game</h3>
+                    <div class="modal-nav">
+                        <p class="modal-nav-content">Testing your knowledge should always be a fun game. Let's see what we've learned so far from SEI course and if we're able to speak the engineering lingo in the real world.</p>
+                    </div>
                 </div>
+                <div class="nav-item nav-rules">
+                    <h3 class="nav-option">How to play</h3>
+                    <ul class="modal-nav">
+                        <li>Select the best multiple choice that matches the question card.</li>
+                        <li>If answer is correct, your score will increased by the question amount.</li>
+                        <li>If answer is incorrect, your score will be decreased by the question amount.</li>
+                    </ul>
+                </div>
+            </nav>
+            <input type="text" placeholder="Enter your name to start the trivia">
+        </header>
+        <main>
+            <div class="gameboard gameboard_grid">
+                <div class="gameboard gameboard_column1">
+                    <div class="gameboard gameboard_child" id="category1">
+                        <p class="category-name">Terminology</p>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$100</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">This is a troubleshooting term for finding and fixing errors in the program.</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>A.</strong> Console.log</p>
+                                <p class="answer" data-answer="true" data-value="100"><strong>B.</strong> Debugging</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>C.</strong> Developers Tool</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$200</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">This is a text-based user interface (UI) used to view and manage computer files. Accessible through the computer
+                                terminal.</p>
+                                <p class="answer" data-answer="true" data-value="200"><strong>A.</strong> Command Line Interface</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>B.</strong> User Demand Interface</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Graphical User Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$300</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">Its a set of rules, routines, and protocols that govern how one application can talk to
+                                    another and used to build
+                                    software applications.</p>
+                                <p class="answer" data-answer="false" data-value="300" ><strong>A.</strong> APP</p>
+                                <p class="answer" data-answer="false" data-value="300"><strong>B.</strong> CPU</p>
+                                <p class="answer" data-answer="true" data-value="300"><strong>C.</strong> API</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$400</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">This is a programming interface for HTML. The HTML gets loaded on browser & is converted to a Javascript object.</p>
+                                <p class="answer" data-answer="true" data-value="400"><strong>A.</strong> DOM</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> API</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>C.</strong> CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameboard gameboard_column2">
+                    <div class="gameboard gameboard_child" id="category2">
+                        <p class="category-name">Arrays & Objects</p>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$100</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">These are used to store multiple values in a variable.</p>
+                                <p class="answer" data-answer="true" data-value="100"><strong>A.</strong> Square brackets</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>B.</strong> Curly braces</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>C.</strong> Parentheses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$200</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">These are a few examples that we can use: .push, .pop, .length, .indexOf, .concat</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>A.</strong> Syntax</p>
+                                <p class="answer" data-answer="true" data-value="200"><strong>B.</strong> Methods</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Strings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$300</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">This underscore means for developers to not use the property.</p>
+                                <p class="answer" data-answer="true" data-value="300"><strong>A.</strong> Private property</p>
+                                <p class="answer" data-answer="false" data-value="300"><strong>B.</strong> Undefined property</p>
+                                <p class="answer" data-answer="false" data-value="300"><strong>C.</strong> Null property</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$400</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">A template format to create multiple new objects with same kind of properties. Syntax are to always start with capital
+                                letter and are always used with 'new' keyword when assigning new object variables.</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>A.</strong> Obstructor function</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> Factory pattern</p>
+                                <p class="answer" data-answer="true" data-value="400"><strong>C.</strong> Constructor function</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameboard gameboard_column3">
+                    <div class="gameboard gameboard_child" id="category3">
+                        <p class="category-name">Javascript</p>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$100</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">In the early days, this was the only way to declare a variable. ES6 then introduced two new ways to declare a variable.</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>A.</strong> Let</p>
+                                <p class="answer" data-answer="false" data-value="100"><strong>B.</strong> Const</p>
+                                <p class="answer" data-answer="true" data-value="100"><strong>C.</strong> Var</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$200</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">These are a few examples of the primitive type: strings, booleans, & numbers.</p>
+                                <p class="answer" data-answer="true" data-value="200"><strong>A.</strong> Data Type</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>B.</strong> Method Type</p>
+                                <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Reference Type</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$300</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">These are examples of this type of statements: ‘IF’, ‘IF-Else’, ‘While’ and ‘Else-If’.</p>
+                                <p class="answer" data-answer="false" data-value="300"><strong>A.</strong> Loop statement</p>
+                                <p class="answer" data-answer="true" data-value="300"><strong>B.</strong> Conditional statement</p>
+                                <p class="answer" data-answer="false" data-value="300"><strong>C.</strong> Object manipulation statement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gameboard gameboard_child">
+                        <p class="prize-amount">$400</p>
+                        <div class="modal-card">
+                            <div class="modal-content">
+                                <button class="close">X</button>
+                                <p class="question">There are three phases to this: Capture phase, target phase and bubbling phase.</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>A.</strong> Recursion</p>
+                                <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> Hoisting</p>
+                                <p class="answer" data-answer="true" data-value="400"><strong>C.</strong> Event Propagation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="scoreboard">
+                <div class="players_score">Score</div>
             </div>
-            <div class="nav-item nav-rules">
-                <h3 class="nav-option">How to play</h3>
-                <ul class="modal-nav">
-                    <li>Select the best multiple choice that matches the question card.</li>
-                    <li>If answer is correct, your score will increased by the question amount.</li>
-                    <li>If answer is incorrect, your score will be decreased by the question amount.</li>
-                </ul>
-            </div>
-        </nav>
-        <input type="text" placeholder="Enter your name to start the trivia">
-    </header>
-    <main>
-        <section class="gameboard gameboard_grid">
-            <div class="gameboard gameboard_column1">
-                <div class="gameboard gameboard_child" id="category1">
-                    <p class="category-name">Terminology</p>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$100</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">This is a troubleshooting term for finding and fixing errors in the program.</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>A.</strong> Console.log</p>
-                            <p class="answer" data-answer="true" data-value="100"><strong>B.</strong> Debugging</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>C.</strong> Developers Tool</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$200</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">This is a text-based user interface (UI) used to view and manage computer files. Accessible through the computer
-                            terminal.</p>
-                            <p class="answer" data-answer="true" data-value="200"><strong>A.</strong> Command Line Interface</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>B.</strong> User Demand Interface</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Graphical User Interface</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$300</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">Its a set of rules, routines, and protocols that govern how one application can talk to
-                                another and used to build
-                                software applications.</p>
-                            <p class="answer" data-answer="false" data-value="300" ><strong>A.</strong> APP</p>
-                            <p class="answer" data-answer="false" data-value="300"><strong>B.</strong> CPU</p>
-                            <p class="answer" data-answer="true" data-value="300"><strong>C.</strong> API</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$400</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">This is a programming interface for HTML. The HTML gets loaded on browser & is converted to a Javascript object.</p>
-                            <p class="answer" data-answer="true" data-value="400"><strong>A.</strong> DOM</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> API</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>C.</strong> CSS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gameboard gameboard_column2">
-                <div class="gameboard gameboard_child" id="category2">
-                    <p class="category-name">Arrays & Objects</p>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$100</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">These are used to store multiple values in a variable.</p>
-                            <p class="answer" data-answer="true" data-value="100"><strong>A.</strong> Square brackets</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>B.</strong> Curly braces</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>C.</strong> Parentheses</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$200</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">These are a few examples that we can use: .push, .pop, .length, .indexOf, .concat</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>A.</strong> Syntax</p>
-                            <p class="answer" data-answer="true" data-value="200"><strong>B.</strong> Methods</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Strings</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$300</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">This underscore means for developers to not use the property.</p>
-                            <p class="answer" data-answer="true" data-value="300"><strong>A.</strong> Private property</p>
-                            <p class="answer" data-answer="false" data-value="300"><strong>B.</strong> Undefined property</p>
-                            <p class="answer" data-answer="false" data-value="300"><strong>C.</strong> Null property</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$400</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">A template format to create multiple new objects with same kind of properties. Syntax are to always start with capital
-                            letter and are always used with 'new' keyword when assigning new object variables.</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>A.</strong> Obstructor function</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> Factory pattern</p>
-                            <p class="answer" data-answer="true" data-value="400"><strong>C.</strong> Constructor function</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gameboard gameboard_column3">
-                <div class="gameboard gameboard_child" id="category3">
-                    <p class="category-name">Javascript</p>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$100</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">In the early days, this was the only way to declare a variable. ES6 then introduced two new ways to declare a variable.</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>A.</strong> Let</p>
-                            <p class="answer" data-answer="false" data-value="100"><strong>B.</strong> Const</p>
-                            <p class="answer" data-answer="true" data-value="100"><strong>C.</strong> Var</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$200</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">These are a few examples of the primitive type: strings, booleans, & numbers.</p>
-                            <p class="answer" data-answer="true" data-value="200"><strong>A.</strong> Data Type</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>B.</strong> Method Type</p>
-                            <p class="answer" data-answer="false" data-value="200"><strong>C.</strong> Reference Type</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$300</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">These are examples of this type of statements: ‘IF’, ‘IF-Else’, ‘While’ and ‘Else-If’.</p>
-                            <p class="answer" data-answer="false" data-value="300"><strong>A.</strong> Loop statement</p>
-                            <p class="answer" data-answer="true" data-value="300"><strong>B.</strong> Conditional statement</p>
-                            <p class="answer" data-answer="false" data-value="300"><strong>C.</strong> Object manipulation statement</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameboard gameboard_child">
-                    <p class="prize-amount">$400</p>
-                    <div class="modal-card">
-                        <div class="modal-content">
-                            <button class="close">X</button>
-                            <p class="question">There are three phases to this: Capture phase, target phase and bubbling phase.</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>A.</strong> Recursion</p>
-                            <p class="answer" data-answer="false" data-value="400"><strong>B.</strong> Hoisting</p>
-                            <p class="answer" data-answer="true" data-value="400"><strong>C.</strong> Event Propagation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
-        <section class="scoreboard">
-            <div class="players_score">Score</div>
-        </section>
-    </main>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,6 +1,6 @@
-# Trivia Game
+# Trivia Game - Jeopardy style
 
-Testing your knowledge should always be a fun game, because it makes the user WANT to take part in the quiz instead of the dreaded feeling of them HAVING to. I know we don't get quizzed on the information we've learned from SEI course but it's nice to know if we're able to speak the engineering lingo in the real world. 
+Testing your knowledge should always be a fun game, because it makes the user WANT to take part in the quiz instead of the dreaded feeling of them HAVING to. I know we don't get quizzed on the information we've learned from SEI course but it's nice to know if we're able to speak the engineering lingo in the real world. Instead of straight up quizzing you "What does HTML stand for?" I've incorporated the quiz to be like Jeopardy style.
 
 ## Table of Contents:
 - [User Stories](https://github.com/daisyy125/ga-project-1#user-stories)
@@ -10,6 +10,7 @@ Testing your knowledge should always be a fun game, because it makes the user WA
 - Installation - how to install your program
 - Usage - instructions on how to use project after installation. include screenshots of project in action
 - [UX Modifications/Hurdles/Unsolved problems](https://github.com/daisyy125/ga-project-1#modificationshurdlesunsolved-problems)
+- Future Add-ons
 - [Credits](https://github.com/daisyy125/ga-project-1#credits)
 
 
@@ -60,13 +61,17 @@ I started off my MVP version of the game by creating logic individually (each qu
 **Gold version**
 - [ ] Open field to type in question
 - [ ] Keep track of high scores
-- [ ] Mobile version
+- [x] Mobile version
 
 ## Technologies:
-- HTML
-- CSS
+- HTML (passed HTML5 Validator)
+- CSS (passed CSS Validator)
 - Javascript
 - Flexbox
+
+## Installation:
+
+## Usage:
 
 ## Modifications/Hurdles/Unsolved Problems
 
@@ -75,16 +80,21 @@ I started off my MVP version of the game by creating logic individually (each qu
 
 - My GA Instructor, Jen, also suggested to have a X close button on the quiz modal instead of setting a timeout on the modal when the question is answered. That way users are able to reflect on question & answer they selected.
 
+- I created responsive version of the game for users to be able to play on their smaller devices.
+
 **Hurdles:**
 
 I was prepared for the project to be hard but I didn't realize how complicated it can get. Every time I got one function to work, a new issue would arise. Luckily I had awesome GA Instructors to guide me along and provided great feedback (also a different angle) on how to tackle the hurdles.
 
 - I wanted to display a response when the user selects an answer, notifying them if the answer was correct or incorrect. I couldn't get the correct corresponding div to display and eventually found a workaround (suggested by my GA IA) where I would create a new p node, append directly after the multiple choice answer user selected.
 
-- It was a bit tricky to get the multiple choice function to only allow users to select only ONE multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructor worked through this with me and I was able to update the code to have it working as I planned.
+- It was a bit tricky to get the multiple choice function to only allow users to select only ONE multiple choice answer. I have tried multiple ways but the outcome I got still allowed the user to select each multiple choice answer one time (therefore, each question allowed them 3 multiple choice select). My GA Instructors worked through this with me and I was able to update the code to have it working as I planned (Thank you Jen & Hou).
 
 **Unsolved problems:**
-- There is still lingering issues with users able to select another answer once they close out the question and goes back into the same question.
+- Occasionally the score would return a NaN and need to resolve it.
+
+## Future Add-ons
+
 
 ## Credits
 
@@ -103,6 +113,8 @@ Programming terminologies for quiz - https://hackr.io/blog/programming-terms-def
 Quiz - https://www.sitepoint.com/how-why-use-html5-custom-data-attributes/
 
 Stackoverflow - https://stackoverflow.com/questions/13093126/insert-unicode-character-into-javascript
+
+https://stackoverflow.com/questions/40147856/disable-click-event-on-all-controls-using-javascript
 
 Unicode Characters - https://www.fileformat.info/info/unicode/char/2714/index.htm
 

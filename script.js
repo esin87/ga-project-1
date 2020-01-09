@@ -50,6 +50,8 @@ let closeModal = document.querySelectorAll('.close');
 question.forEach((modal) => {
     modal.addEventListener('click', (evt) => {
         evt.target.nextElementSibling.style.display = 'flex';
+        evt.target.classList.add('disable');
+        evt.target.style.color = 'royalblue';
         questionChoice = false;
     });
 })
