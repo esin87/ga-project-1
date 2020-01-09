@@ -14,7 +14,6 @@ body {
     font-family: "Gelasio", sans-serif;
     margin: 100px auto;
     max-width: 1240px;
-    
 }
 
 .outer-wrapper {
@@ -181,4 +180,82 @@ button {
     margin: 100px;
     text-align: center;
     width: 25%;
+}
+
+/* /////////////////////////
+//RESPONSIVE
+//////////////////////////*/
+
+@media screen and (max-width: 600px) {
+
+body {
+    margin: 50px auto;
+    max-width: 350px;
+}
+
+.outer-wrapper {
+    border: 10px solid white;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 25px auto;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+input {
+    font-size: 14px;
+    margin-top: 18px;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+}
+
+.nav-parent {
+    display: none;
+}
+
+.gameboard_child {
+    padding: 20px;
+}
+
+.gameboard_column1, .gameboard_column2, .gameboard_column3 {
+    font-size: 15px;
+    width: 31%;
+}
+
+#category1, #category2, #category3 {
+    font-size: 14px;
+}
+
+#category1 {
+    padding: 38px 5px;
+}
+
+#category3 {
+    padding: 38px 8px;
+}
+
+.players_score {
+    font-size: 18px;
+    margin: 50px;
+    width: 80%;
+}
+
+.modal-content {
+    font-size: 16px;
+    line-height: 40px;
+    padding: 10px;
+    width: 320px;
+}
+
+button {
+    height: 25px;
+    margin-left: 280px;
+    width: 25px;
+}
+
 }

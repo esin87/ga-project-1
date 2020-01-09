@@ -99,4 +99,3 @@ multipleChoice.forEach((highlightChoice) => {
         } 
     })
 })
-
