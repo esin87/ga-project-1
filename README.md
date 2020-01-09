@@ -7,10 +7,10 @@ Testing your knowledge should always be a fun game, because it makes the user WA
 - [Wireframes](https://github.com/daisyy125/ga-project-1#wireframes)
 - [Planning](https://github.com/daisyy125/ga-project-1#planning-checklist)
 - [Technologies](https://github.com/daisyy125/ga-project-1#technologies)
-- Installation - how to install your program
-- Usage - instructions on how to use project after installation. include screenshots of project in action
+- [Installation](https://github.com/daisyy125/ga-project-1#installation)
+- [Usage](https://github.com/daisyy125/ga-project-1#usage)
 - [UX Modifications/Hurdles/Unsolved problems](https://github.com/daisyy125/ga-project-1#modificationshurdlesunsolved-problems)
-- Future Add-ons
+- [Future Add-ons](https://github.com/daisyy125/ga-project-1#future-add-ons)
 - [Credits](https://github.com/daisyy125/ga-project-1#credits)
 
 
@@ -44,8 +44,6 @@ I used a free program Wireframe.cc to create my wireframes. This is to get an id
 
 I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-game) to keep my planning organized with the project tasks, reference links, and due dates. Thanks to my Instructor Assistant for the suggestion, Esin Saribudak :purple_heart:
 
-I started off my MVP version of the game by creating logic individually (each question modal). That way I can QA and ensure it works before refactoring the code using event propagation.
-
 **Bronze version**
 - [x] 3 categories
 - [x] 4 answers each category
@@ -70,17 +68,38 @@ I started off my MVP version of the game by creating logic individually (each qu
 - Flexbox
 
 ## Installation:
+- Download folder ga-project-1. Which will include the following files:
+    - index.html
+    - CSS folder with style.css
+    - script.js
+    - Images folder with wireframes
+    - Images folder with screenshots of live game
+- Open index.html file in browser to start play the game (Google Chrome recommended).
 
 ## Usage:
 
+![](https://github.com/daisyy125/ga-project-1/blob/master/images/livegame/live-game.png)
+
+- Nav options allow users to click on "About the game" or "How to play" to learn more about the game and rules.
+
+- User can then enter their name in the input field to start the trivia.
+
+- There are three categories, each with four questions. Each question has a different prize amount. The higher the prize amount, the harder the question gets. User can select any question amount on the board to answer.
+
+- A modal will appear with question and three multiple choice answers to select. Based on the user selection: If the answer is correct - the prize amount will be added to the score at the bottom of the main page; If the answer is incorrect - the prize amount will be deducted from the score at the bottom of the main page.
+
+- User is only allowed to answer each question once.
+
 ## Modifications/Hurdles/Unsolved Problems
 
-**UX modifications:**
-- It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice. 
+**Modifications:**
+- UX: It was more user friendly to change the "click" action on the multiple choice radio buttons (shown on wireframe) to "click" the entire multiple choice line item. This way if users are playing on the phone, its easier for them to select answer choice. 
 
-- My GA Instructor, Jen, also suggested to have a X close button on the quiz modal instead of setting a timeout on the modal when the question is answered. That way users are able to reflect on question & answer they selected.
+- UX: My GA Instructor, Jen, also suggested to have a X close button on the quiz modal instead of setting a timeout on the modal when the question is answered. That way users are able to reflect on question & answer they selected.
 
-- I created responsive version of the game for users to be able to play on their smaller devices.
+- UX: I created responsive version of the game for users to be able to play on their smaller devices.
+
+- Code: I originally started the javascript with one question (individually), that way I can QA and ensure the code works as expected. Then I refactored using event propagation.
 
 **Hurdles:**
 
@@ -94,9 +113,13 @@ I was prepared for the project to be hard but I didn't realize how complicated i
 - Occasionally the score would return a NaN and need to resolve it.
 
 ## Future Add-ons
+- 2 player game
+- Open field to type in question. This will be a big challenge since we need to set logic to match what user typed in to the correct answer. Issue I foresee this add-on to run into: possibility typo from user, 
 
 
 ## Credits
+
+Thank you to my wonderful GA Instructors (& IA's) and GA classmates for providing technical and moral support throughout!
 
 Credits to amazing sources that I'm thankful for! Sending them many many thanks!
 
