@@ -6,8 +6,6 @@ let navInfo = document.querySelectorAll('.nav-option');
 
 navInfo.forEach((readMore) => {
     readMore.addEventListener('click', (evt) => {
-        console.log(evt);
-        console.log(evt.target.nextElementSibling.style.display);
         if (evt.target.nextElementSibling.style.display === 'block') {
             evt.target.nextElementSibling.style.display = 'none'
         } else {
