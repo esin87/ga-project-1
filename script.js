@@ -14,7 +14,25 @@ navInfo.forEach((readMore) => {
     })
 })
 
+//PLAYER NAME ENTRY//
+//When user enters name in input field
+    //display welcome message
+    //pass the username entry to score board
 
+let player = document.querySelector('input');
+
+player.addEventListener('change', playerName)
+
+function playerName(evt) {
+    evt.target.style.display = 'none';
+    let welcome = document.createElement('p');
+    welcome.innerText = `Let's get started ${evt.target.value}! Choose a question below!`;
+    welcome.style.color = 'purple';
+    welcome.style.fontStyle = 'italic';
+    welcome.style.fontSize = '20px';
+    welcome.style.paddingTop = '20px';
+    document.querySelector('header').appendChild(welcome);
+}
 
 //QUESTION/ANSWER MODAL to appear upon click event//
 
