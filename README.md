@@ -113,6 +113,7 @@ I was prepared for the project to be hard but I didn't realize how complicated i
 - Occasionally the score would return a NaN and need to resolve it.
 
 ## Future Add-ons
+- Menu bar for mobile version
 - Timer for multiple choice
 - Keep track of scores from previous games (ex. scoreboard of high scorers)
 - 2 player game
