@@ -113,6 +113,8 @@ I was prepared for the project to be hard but I didn't realize how complicated i
 - Occasionally the score would return a NaN and need to resolve it.
 
 ## Future Add-ons
+- Timer for multiple choice
+- Keep track of scores from previous games (ex. scoreboard of high scorers)
 - 2 player game
 - Open field to type in question. This will be a big challenge since we need to set logic to match what user typed in to the correct answer. Issue I foresee this add-on to run into: possibility typo from user.
 

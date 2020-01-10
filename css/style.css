@@ -129,7 +129,7 @@ input {
 //MODAL - QUESTION & ANSWER
 //////////////////////////*/
 
-.modal-card {
+.modal-card, .complete-modal {
     align-items: center;
     background-color: rgba(0,0,0,0.4);
     display: none;
@@ -141,7 +141,7 @@ input {
     left: 0;
 }
 
-.modal-content {
+.modal-content, .complete-content {
     background-color: royalblue;
     border: 2px solid white;
     border-radius: 10px;
@@ -169,6 +169,10 @@ button {
 
 .disable {
     pointer-events: none;
+}
+
+.complete-close {
+    margin-left: 250px;
 }
 
 /* /////////////////////////
@@ -261,7 +265,7 @@ input {
     width: 80%;
 }
 
-.modal-content {
+.modal-content, .complete-content {
     font-size: 16px;
     line-height: 40px;
     padding: 10px;

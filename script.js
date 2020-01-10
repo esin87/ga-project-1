@@ -46,12 +46,13 @@ function playerName(evt) {
 let questionChoice = false;
 let question = document.querySelectorAll('.prize-amount');
 let closeModal = document.querySelectorAll('.close');
+let completes = document.getElementsByClassName('disable');
 
 question.forEach((modal) => {
     modal.addEventListener('click', (evt) => {
         evt.target.nextElementSibling.style.display = 'flex';
         evt.target.classList.add('disable');
-        evt.target.style.color = 'royalblue';
+        evt.target.innerText = '\u2010';
         questionChoice = false;
     });
 })
@@ -59,6 +60,12 @@ question.forEach((modal) => {
 closeModal.forEach((closeButton) => {
     closeButton.addEventListener('click', (evt) => {
         evt.target.offsetParent.style.display = 'none';
+            if (completes.length === 12) {
+                document.querySelector('.complete-modal').style.display = 'flex';
+                document.querySelector('.complete-close').addEventListener('click', () => {
+                    document.querySelector('.complete-modal').style.display = 'none';
+                })
+        }
     })
 });
 
@@ -73,7 +80,6 @@ closeModal.forEach((closeButton) => {
 let multipleChoice = document.querySelectorAll('.answer');
 let scoreBoard = document.querySelector('.players_score');
 let score = 0;
-
 
 multipleChoice.forEach((highlightChoice) => {
     highlightChoice.addEventListener('click', (evt) => {
@@ -94,7 +100,7 @@ multipleChoice.forEach((highlightChoice) => {
                     if (score >= 0) {
                         scoreBoard.style.color = 'blue';
                     }
-                scoreBoard.innerText = `Score: $  ${score}`   
+                scoreBoard.innerText = `Score: $  ${score}`;
             } else {
                 let response = document.createElement('p');
                 response.innerText = '\u2717  Incorrect answer. Try next question!';
@@ -113,3 +119,4 @@ multipleChoice.forEach((highlightChoice) => {
         } 
     })
 })
+
