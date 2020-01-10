@@ -88,7 +88,13 @@ multipleChoice.forEach((highlightChoice) => {
                 response.style.fontStyle = 'italic';
                 evt.target.appendChild(response);
                 score += parseInt(prizeAmount);
-                scoreBoard.innerText = `Score: $  ${score}`;
+                if (score < 0) {
+                    scoreBoard.style.color = 'red';
+                } 
+                    if (score >= 0) {
+                        scoreBoard.style.color = 'blue';
+                    }
+                scoreBoard.innerText = `Score: $  ${score}`   
             } else {
                 let response = document.createElement('p');
                 response.innerText = '\u2717  Incorrect answer. Try next question!';
@@ -96,6 +102,12 @@ multipleChoice.forEach((highlightChoice) => {
                 response.style.fontStyle = 'italic';
                 evt.target.appendChild(response);
                 score -= parseInt(prizeAmount);
+                if (score < 0) {
+                    scoreBoard.style.color = 'red';
+                }
+                    if (score >= 0) {
+                        scoreBoard.style.color = 'blue';
+                    }
                 scoreBoard.innerText = `Score: $  ${score}`;
             }
         } 

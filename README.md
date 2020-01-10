@@ -52,7 +52,7 @@ I created a [Trello Board](https://trello.com/b/zqiH9Ljg/ga-project-1-trivia-gam
 
 **Silver version**
 - [x] Expand nav with About & Instructions
-- [ ] Player can enter their name for scoreboard to reflect
+- [x] Player can enter their name for scoreboard to reflect
 - [x] Page styling
 - [ ] Timer for multiple choice
 
@@ -114,7 +114,7 @@ I was prepared for the project to be hard but I didn't realize how complicated i
 
 ## Future Add-ons
 - 2 player game
-- Open field to type in question. This will be a big challenge since we need to set logic to match what user typed in to the correct answer. Issue I foresee this add-on to run into: possibility typo from user, 
+- Open field to type in question. This will be a big challenge since we need to set logic to match what user typed in to the correct answer. Issue I foresee this add-on to run into: possibility typo from user.
 
 
 ## Credits
