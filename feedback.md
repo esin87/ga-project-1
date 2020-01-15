@@ -69,6 +69,7 @@ Criteria: Is there adequate documentation? Is the repository well organized and 
 -   Your README is incredibly detailed and thorough, and shows how much investment you put into the planning process. You went above and beyond, adding detailed information about how to use the game, as well as your initial approach to the code and how you refactored.
 -   Sharing your Trello board shows a methodical and organized approach to project planning, which is a really important skill for developers! It was a great idea to include deadlines and links to resources on your Trello board; however, your board is private and I was not able to see it from the link provided. Consider making it public if you'd like other visitors to your repo to see your detailed planning process!
 -   Simple but effective wireframes that show the thought you put into how your application would look and be organized.
+-   Repo is very well-organized, with directories for different kinds of files.
 
 ### Areas for Growth:
 
